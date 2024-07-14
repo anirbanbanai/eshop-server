@@ -16,7 +16,7 @@ const productSchema: Schema<IProducts> = new mongoose.Schema({
     required: true,
   },
   price: {
-    type: String,
+    type: Number,
   },
   category: {
     type: String,

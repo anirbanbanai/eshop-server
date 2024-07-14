@@ -3,6 +3,7 @@ import { UserRoutes } from '../modules/User/user.route';
 import { ProductRouter } from '../modules/products/products.route';
 import { AuthRoutes } from '../modules/auth/auth.route';
 import { CartRouter } from '../modules/cart/cart.route';
+import { MessageRouter } from '../modules/message/message.router';
 
 type TModuleRoutes = {
   path: string;
@@ -27,6 +28,10 @@ const moduleRoutes: TModuleRoutes[] = [
   {
     path:"/cart" ,
     route: CartRouter ,
+  },
+  {
+    path:"/messages" ,
+    route: MessageRouter ,
   },
 ];
 

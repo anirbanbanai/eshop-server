@@ -3,6 +3,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import cors from 'cors';
+import bodyParser from 'body-parser';
 import express, { Application } from 'express';
 // import globalErrorHandler from './app/middlewares/globalErrorhandler';
 // import notFound from './app/middlewares/notFound';
@@ -12,7 +13,7 @@ const app: Application = express();
 
 //parsers
 app.use(express.json());
-
+app.use(bodyParser.json());
 app.use(cors({ origin: '*' }));
 
 // application routes
